@@ -1,0 +1,12 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/  # 指定注册中心的url
+    register-with-eureka: false # 指定不进行注册操作
+  server:
+    enable-self-preservation: false # (开发下)禁用eureka server的自我保护机制
+spring:
+  application:
+    name: eureka-server-dev
+server:
+  port: 6001

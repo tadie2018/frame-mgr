@@ -1,0 +1,11 @@
+# 高可用配置文件 High Availability-2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6111/eureka/  # 高可用地址关联
+    register-with-eureka: false # 指定不进行注册操作
+spring:
+  application:
+    name: eureka-server-ha2
+server:
+  port: 6112

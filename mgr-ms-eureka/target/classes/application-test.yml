@@ -1,0 +1,10 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6011/eureka/  # 指定注册中心的url
+    register-with-eureka: false # 指定不进行注册操作
+spring:
+  application:
+    name: eureka-server-test
+server:
+  port: 6011
